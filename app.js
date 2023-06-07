@@ -9,7 +9,7 @@ const Blog = require('./models/blogs');
 const app = express();
 
 //connect to database
-const dbURI ='mongodb+srv://firstauthuser:kkh6ceCBq9KpDqhR@Cluster0.u8d8atn.mongodb.net/cluster0?retryWrites=true&w=majority';
+//removed for safety purposes
 
 //what i chnaged from the link : name and pass of teh dataabse an teh name of the db
 
