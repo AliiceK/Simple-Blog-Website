@@ -1,0 +1,59 @@
+
+
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+    <body>
+        <%- include('./partials/nav.ejs') %>
+
+        <h1> Create your blog</h1>
+
+        <div class="create-blog-post">
+            <form action="/blogs" method="POST">  
+                <label for="title" > Name your Blog </label>
+                <input type="text" class="input" name="title" required> 
+                <label for="snippet"> Add your Blog Snippet </label>
+                <input type="text" class="input" name="snippet" required> 
+                <label for="body"> Fill your log with the body</label>
+                <textarea type="text" class="input" name="body" required></textarea> 
+                <button class="button"> Submit </button>
+            </form>
+        </div>
+    </body>
+
+    <%- include('./partials/footer.ejs') %>
+</html>
+
+<style>
+
+    button {
+        width: 30%;
+       margin: 0 auto;
+       margin-top: 1%;
+       background-color: rgb(124, 202, 124);
+       color: white;
+    }
+
+    .create-blog-post {
+        border-style: solid;
+        margin: 20px 20px;
+        border-radius: 30px;
+        border-color: rgb(174, 170, 170);
+    }
+   
+    form {
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    label, textarea {
+        margin-bottom: 10px;
+        text-align: center;
+       
+    }
+
+    .input {
+        width: 70%;
+        margin-left: 10%;
+    }
+</style>

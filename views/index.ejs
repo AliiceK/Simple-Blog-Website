@@ -1,0 +1,34 @@
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+
+
+    <body>
+        <%- include('./partials/nav.ejs') %>
+
+        <div class="blogs content">
+            <h2> See all the blogs</h2>
+
+            <% if (blogs.length > 0) { %>
+                <% blogs.forEach(blog => { %>
+                    <div class="blogcontainer">
+                    <h3 class="title"><%= blog.title %></h3>
+                    <p class="snippet"> <%= blog.snippet %> </p>
+                    </div>
+             <%  }) %>
+
+           <% } %>
+        </div>
+    </body>
+
+    <%- include('./partials/footer.ejs') %>
+</html>
+
+
+<style> 
+    .blogcontainer {
+        background-color:whitesmoke;
+        border-color: rgb(106, 104, 104);
+        border-radius : 10px;
+    }
+
+</style>

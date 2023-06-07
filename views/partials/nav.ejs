@@ -1,0 +1,52 @@
+<nav> 
+    <div class="site-title"> 
+            <h1 class="BlogWebsite"> Blog website</h1>
+            <div class="LowerBanner">
+            <p class="Postyourblogs"> Post your blogs</p>
+
+            <div class="categories">
+                <a href="/"> Blogs</a>
+                <a href="/about"> About</a>
+                <a href ="/blogs/create"> Add a new blog </a>
+            </div>
+           </div>
+        
+    </div>
+
+</nav>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+    } /* added this to remove teh white space around thee banner */
+
+
+    .BlogWebsite{
+       font-size: 300%;
+       margin-bottom: 0.2%;
+       font-family: 'Tsukimi Rounded'
+    }
+
+    .Postyourblogs {
+        font-size: 200%;
+        margin-top: 0;
+        font-family: 'Tsukimi Rounded'
+    }
+
+    .site-title {
+        background: linear-gradient(to bottom, lightblue, white);
+    }
+
+    .categories {
+        display: flex;
+        gap: 8%;
+        font-size: 140%;
+    }
+    .LowerBanner {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
