@@ -9,7 +9,7 @@ const Blog = require('./models/blogs');
 const app = express();
 
 //connect to database
-//removed for safety purposes
+//removed 
 
 //what i chnaged from the link : name and pass of teh dataabse an teh name of the db
 
